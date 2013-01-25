@@ -23,7 +23,7 @@ void* threadFunc (void* arg) {
         continue;
       }
     }
-    printf("value: %s\n", (const char*)msg.data);
+    printf("recieved: %s\n", (const char*)msg.data);
     free(msg.data); // we malloc'd earlier, remember? always free your mallocs!
   }
   return (void*)EXIT_SUCCESS;
